@@ -10,13 +10,6 @@ function Buttons(props) {
     <div>
       <div style={styles.container}>
         <button
-          style={{ ...styles.button, ...styles.facebook }}
-          onClick={() => Auth.federatedSignIn({provider: 'Facebook'})}
-        >
-          <FaFacebook color='white' />
-          <p style={styles.text}>Sign in with Facebook</p>
-        </button>
-        <button
           style={{ ...styles.button, ...styles.google }}
           onClick={() => Auth.federatedSignIn({provider: 'Google'})}
         >
