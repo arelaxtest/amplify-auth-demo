@@ -1,19 +1,19 @@
 {
     "local": {
         "awscloudformation": {
-            "AuthRoleName": "amplify-auth-web-20190424134206-authRole",
-            "UnauthRoleArn": "arn:aws:iam::557458351015:role/amplify-auth-web-20190424134206-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::557458351015:role/amplify-auth-web-20190424134206-authRole",
+            "AuthRoleName": "amplify-auth-demo-local-20190825011505-authRole",
+            "UnauthRoleArn": "arn:aws:iam::678088849394:role/amplify-auth-demo-local-20190825011505-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::678088849394:role/amplify-auth-demo-local-20190825011505-authRole",
             "Region": "us-east-2",
-            "DeploymentBucketName": "amplify-auth-web-20190424134206-deployment",
-            "UnauthRoleName": "amplify-auth-web-20190424134206-unauthRole",
-            "StackName": "amplify-auth-web-20190424134206",
-            "StackId": "arn:aws:cloudformation:us-east-2:557458351015:stack/amplify-auth-web-20190424134206/6cc79d10-66d1-11e9-b632-0a84bc2bb20a"
+            "DeploymentBucketName": "amplify-auth-demo-local-20190825011505-deployment",
+            "UnauthRoleName": "amplify-auth-demo-local-20190825011505-unauthRole",
+            "StackName": "amplify-auth-demo-local-20190825011505",
+            "StackId": "arn:aws:cloudformation:us-east-2:678088849394:stack/amplify-auth-demo-local-20190825011505/025a9aa0-c6c5-11e9-b644-0285144e27ac"
         },
         "categories": {
             "auth": {
-                "cognito98e49332": {
-                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"1503594553110091\",\"client_secret\":\"1900b46b2774c155bccfb33f6f68b269\"},{\"ProviderName\":\"Google\",\"client_id\":\"141809654074-7np9ftnjlt43ervmvskugrs1akij3lqg.apps.googleusercontent.com\",\"client_secret\":\"eJ0uaSO0BBD9hT6NZVPwdDFK\"}]"
+                "amplifyauthdemob1911f49": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\",\"client_id\":\"706485322260-k6ddckfol7fgfhu94tre7rld744p9sq3.apps.googleusercontent.com\",\"client_secret\":\"pUf4ANrkru-u_24xuVXn2D8d\"}]"
                 }
             }
         }

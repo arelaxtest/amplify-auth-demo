@@ -2,12 +2,12 @@
 
 const awsmobile = {
     "aws_project_region": "us-east-2",
-    "aws_cognito_identity_pool_id": "us-east-2:cec55e7d-2e27-4e4d-800a-8924b3d36eb8",
+    "aws_cognito_identity_pool_id": "us-east-2:c5348ad1-cd39-4a98-a0f7-56ec39f7fc30",
     "aws_cognito_region": "us-east-2",
-    "aws_user_pools_id": "us-east-2_hIDtJZZok",
-    "aws_user_pools_web_client_id": "4219m8pdpbuqef2kt905gbuos4",
+    "aws_user_pools_id": "us-east-2_XT5c8jAIY",
+    "aws_user_pools_web_client_id": "d0ijscdpsk43duo6jnt7pdonp",
     "oauth": {
-        "domain": "amplifyauthweb-local.auth.us-east-2.amazoncognito.com",
+        "domain": "amplify-auth-abcedf-local.auth.us-east-2.amazoncognito.com",
         "scope": [
             "phone",
             "email",
@@ -15,8 +15,8 @@ const awsmobile = {
             "profile",
             "aws.cognito.signin.user.admin"
         ],
-        "redirectSignIn": "https://www.amplifyauth.dev?signedin=true",
-        "redirectSignOut": "https://www.amplifyauth.dev/",
+        "redirectSignIn": "http://localhost:3000/",
+        "redirectSignOut": "http://localhost:3000/",
         "responseType": "code"
     },
     "federationTarget": "COGNITO_USER_POOLS"

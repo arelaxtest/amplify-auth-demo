@@ -1,5 +1,5 @@
 {
-    "projectName": "amplify-auth-web",
+    "projectName": "amplify-auth-demo",
     "version": "2.0",
     "frontend": "javascript",
     "javascript": {

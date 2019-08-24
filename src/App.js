@@ -19,7 +19,7 @@ function App() {
       const { payload } = data
       if (payload.event === 'signIn') {
         setImmediate(() => dispatch({ type: 'setUser', user: payload.data }))
-        setImmediate(() => window.history.pushState({}, null, 'https://www.amplifyauth.dev/'))
+        setImmediate(() => window.history.pushState({}, null, 'http://localhost:3000/'))
         updateFormState('base')
       }
       // this listener is needed for form sign ups since the OAuth will redirect & reload
@@ -27,7 +27,7 @@ function App() {
         setTimeout(() => dispatch({ type: 'setUser', user: null }), 350)
       }
     })
-    // we check for the current user unless there is a redirect to ?signedIn=true 
+    // we check for the current user unless there is a redirect to ?signedIn=true
     if (!window.location.search.includes('?signedin=true')) {
       checkUser(dispatch)
     }
@@ -83,7 +83,7 @@ function App() {
 
 function reducer (state, action) {
   switch(action.type) {
-    case 'setUser':  
+    case 'setUser':
       return { ...state, user: action.user, loading: false }
     case 'loaded':
       return { ...state, loading: false }
@@ -128,11 +128,11 @@ const styles = {
     paddingTop: 85,
   },
   loading: {
-    
+
   },
   button: {
     marginTop: 15,
-    width: '100%', 
+    width: '100%',
     maxWidth: 250,
     marginBottom: 10,
     display: 'flex',

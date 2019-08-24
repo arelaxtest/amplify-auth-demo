@@ -35,13 +35,6 @@ function Buttons(props) {
           />
           <p style={{...styles.text, ...styles.orangeText}}>Sign in with Hosted UI</p>
         </button>
-        <button
-          style={{ ...styles.button, ...styles.email }}
-          onClick={() => props.updateFormState('email')}
-        >
-          <FaEnvelope color='white' />
-          <p style={{...styles.text}}>Sign in with Email</p>
-        </button>
       </div>
     </div>
   );
@@ -57,7 +50,7 @@ const styles = {
     flexDirection: 'column'
   },
   button: {
-    width: '100%', 
+    width: '100%',
     maxWidth: 250,
     marginBottom: 10,
     display: 'flex',
