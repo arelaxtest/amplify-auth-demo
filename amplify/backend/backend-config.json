@@ -1,9 +1,9 @@
 {
-	"auth": {
-		"amplifyauthdemob1911f49": {
-			"service": "Cognito",
-			"providerPlugin": "awscloudformation",
-			"dependsOn": []
-		}
-	}
+    "auth": {
+        "amplifyauthdemob1911f49": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": []
+        }
+    }
 }
