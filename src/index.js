@@ -26,17 +26,13 @@ const oauth = {
 };
 
 if (!isLocalhost) {
-  oauth = {
-    domain: 'amplify-auth-abcedf-local.auth.us-east-2.amazoncognito.com',
-    scope: ['phone', 'email', 'profile', 'openid', 'aws.cognito.signin.user.admin'],
-    redirectSignIn: 'https://master.d3h5j4begww46c.amplifyapp.com/',
-    redirectSignOut: 'https://master.d3h5j4begww46c.amplifyapp.com/',
-    responseType: 'code' // or 'token', note that REFRESH token will only be generated when the responseType is code
-  };
+  oauth.redirectSignIn = 'https://master.d3h5j4begww46c.amplifyapp.com/';
+  oauth.redirectSignOut = 'https://master.d3h5j4begww46c.amplifyapp.com/';
 }
 
-config.oauth = oauth;
-Amplify.configure(config)
+var configUpdate = config;
+configUpdate.oauth = oauth;
+Amplify.configure(configUpdate);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
